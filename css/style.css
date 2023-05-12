@@ -39,6 +39,15 @@ hr{
     background-color: gray;
 }
 
+ul li:hover a{
+    color: lightgray;
+    transition: color linear .1s;
+}
+
+i{
+    cursor: pointer;
+}
+
 /* nav */
 
 .main-container > nav{
@@ -105,7 +114,7 @@ nav.nav-big{
     background-color: gray;
     height: 20px;
     border-radius: 50%;
-    overflow: auto;
+    overflow: hidden;
     padding: 1px 2px;
 }
 
@@ -161,6 +170,16 @@ main{
     right: 30%;
     height: 1px;
     background-color: var(--lime);
+    display: none;
+    
+}
+
+li:hover .underline-lime{
+    display: block;
+}
+
+li:first-child .underline-lime{
+    display: block;
 }
 
     /* ? main-content generic sections */
@@ -194,6 +213,24 @@ main{
 
 .card-img{
     width: 100%;
+    position: relative;
+    cursor: pointer;
+}
+
+.card-img:hover::before{
+    content: "\f144";
+    font-size: 2.5rem;
+    font-family: "Font Awesome 5 Free";
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 .card-img.rounded{
@@ -259,9 +296,10 @@ footer > *{
 
 .progress-bar{
     width: 100%;
-    height: 3px;
+    height: 4px;
     background-color: gray;
     position: relative;
+    cursor: pointer;
 }
 
 .progress-bar-point{
@@ -271,6 +309,26 @@ footer > *{
     left: 0;
     right: 70%;
     background-color: #fff;
+}
+
+.progress-bar-pointer{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(50%, -5px);
+    display: none;
+}
+
+.progress-bar:hover .progress-bar-point{
+    background-color: var(--lime);
+}
+
+.progress-bar:hover .progress-bar-pointer{
+    display: block;
 }
 
 .footer-right{
@@ -301,7 +359,13 @@ footer > *{
 .btn{
     color: white;
     padding: 12px 45px;
+    margin-right: 20px;
     border-radius: 30px;
     border: 1px solid white;
     background-color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.btn:hover{
+    transform: scale(1.1);
 }
