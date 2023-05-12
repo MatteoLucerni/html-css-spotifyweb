@@ -14,4 +14,20 @@
     .main{
         width: calc(100vw - 250px);
     }
+
+    .address > *{
+        display: inline-block;
+    }
+}
+
+@media screen and (min-width: 878px){
+
+    main{
+        background-color: blue;
+    }
+
+    .footer-left-clicks{
+        display: flex;
+        gap: 15px;
+    }
 }
