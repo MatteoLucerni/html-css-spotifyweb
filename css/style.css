@@ -39,9 +39,12 @@ hr{
     background-color: gray;
 }
 
+ul li a{
+    transition: color linear .1s;
+}
+
 ul li:hover a{
     color: lightgray;
-    transition: color linear .1s;
 }
 
 i{
@@ -217,7 +220,7 @@ li:first-child .underline-lime{
     cursor: pointer;
 }
 
-.card-img:hover::before{
+.card-img:before{
     content: "\f144";
     font-size: 2.5rem;
     font-family: "Font Awesome 5 Free";
@@ -231,6 +234,12 @@ li:first-child .underline-lime{
     bottom: 0;
     left: 0;
     right: 0;
+    opacity: 0;
+    transition: all .3s;
+}
+
+.card-img:hover:before{
+    opacity: 1;
 }
 
 .card-img.rounded{
@@ -364,6 +373,7 @@ footer > *{
     border: 1px solid white;
     background-color: rgba(0, 0, 0, 0.5);
     cursor: pointer;
+    transition: transform .3s;
 }
 
 .btn:hover{
