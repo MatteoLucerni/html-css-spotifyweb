@@ -41,7 +41,7 @@ hr{
 
 /* nav */
 
-nav{
+.main-container > nav{
     color: gray;
     display: flex;
     flex-direction: column;
@@ -50,15 +50,15 @@ nav{
     justify-content: space-between;
 }
 
-nav *{
+.main-container > nav *{
     line-height: 30px;
 }
 
-nav h5{
+.main-container > nav h5{
     color: white;
 }
 
-nav a{
+.main-container > nav a{
     color: gray;
 }
 
@@ -136,6 +136,34 @@ main{
     overflow-y: auto;
     padding: 15px;
 }
+
+    /* ? main-content nav */
+
+.main-content nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.main-content a{
+    color: grey;
+}
+
+.main-content ul li{
+    position: relative;
+}
+
+.underline-lime{
+    position: absolute;
+    bottom: -5px;
+    left: 30%;
+    right: 30%;
+    height: 1px;
+    background-color: var(--lime);
+}
+
 
 /* footer */
 
