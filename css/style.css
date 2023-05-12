@@ -136,8 +136,46 @@ main{
 /* footer */
 
 footer{
+    color: white;
     height: 80px;
     background-color: var(--darkgray);
+    display: flex;
+    align-items: center;
+}
+
+footer a{
+    color: gray;
+}
+
+footer > *{
+    flex-basis: calc(100% / 3);
+}
+
+.footer-left{
+    display: flex;
+    align-items: center;
+}
+
+.footer-left-img{
+    height: 30px;
+    margin-right: 10px;
+}
+
+.footer-left .address{
+    font-size: 0.7rem;
+    color: gray;
+}
+
+.footer-left-clicks{
+    margin-left: 10px;
+}
+
+.footer-middle{
+    text-align: center;
+}
+
+.footer-right{
+    text-align: right;
 }
 
 /* utlis */
