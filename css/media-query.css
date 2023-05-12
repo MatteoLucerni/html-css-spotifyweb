@@ -1,7 +1,4 @@
 @media screen and (min-width: 639px){
-    main{
-        background-color: red;
-    }
 
     nav.nav-mobile{
         display: none;
@@ -21,10 +18,6 @@
 }
 
 @media screen and (min-width: 878px){
-
-    main{
-        background-color: blue;
-    }
 
     .footer-left-clicks{
         display: flex;
