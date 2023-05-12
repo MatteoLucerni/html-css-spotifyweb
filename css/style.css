@@ -60,6 +60,7 @@ i{
     height: calc(100vh - 80px);
     background-color: black;
     justify-content: space-between;
+    overflow-y: auto;
 }
 
 .main-container > nav *{
